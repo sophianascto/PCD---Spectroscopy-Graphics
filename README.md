@@ -1,7 +1,8 @@
 # PCD---Spectroscopy-Graphics
 Descrição breve do projeto.
 
-## Exemplo de Uso
+## FWHM
+Primeiro faça isso
 
 ```python
 # Este é um exemplo de código Python que faz X, Y, Z
