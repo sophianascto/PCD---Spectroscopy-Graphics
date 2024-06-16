@@ -78,6 +78,10 @@ Por fim use plt.plot nos pontos encontrados para conectar os pontos.
 ```python
 plt.plot([x_max1, x_max2], [y_max1, y_max2], linestyle='--', color='black')
 plt.plot([x_max2, x_max3], [y_max2, y_max3], linestyle='--', color='black')
+
+# Exibir o gráfico
+plt.tight_layout()
+plt.show()
 ```
 A comparação dos picos de máxima absorção é uma prática central na química analítica e em várias outras disciplinas químicas, sendo crucial para a identificação de compostos, quantificação, monitoramento de reações e estudo de interações moleculares. Por exemplo, os espectros obtidos pela espectroscopia UV-Vis apresentam picos característicos para diferentes compostos. Comparar esses picos de absorção máxima permite identificar quais compostos estão presentes na amostra. Cada composto absorve luz em comprimentos de onda específicos, resultando em picos de absorção distintos. Utilizamos desse conhecimento muitas vezes durante as aulas de laboratório do primeiro semeste.
 
