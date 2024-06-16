@@ -65,14 +65,14 @@ Agora basta criar o gráfico e ligar os pontos:
 plt.figure(figsize=(10, 6))
 
 # Plotar o primeiro arquivo normalizado
-plt.plot(df1.iloc[:, 0], df1.iloc[:, 1], label='Extinção Ideal para 63 nm', c = '#800000')
-x_max1, y_max1 = encontrar_ponto_maximo(df1)
-plt.scatter(x_max1, y_max1, color='red', label=f'Ponto Máximo Tabela 1: ({x_max1} nm)') #define o ponto máximo que será comparado
+plt.plot(df1.iloc[:, 0], df1.iloc[:, 1], label='Extinção Ideal para 63 nm', c = '#800000') #plota para o arquivo a primeira coluna como eixo X (comprimento de onda) e a segunda como eixo Y (absorbância)
+x_max1, y_max1 = encontrar_ponto_maximo(df1) #define qual é o ponto máximo do pico chamando a função no arquivo
+plt.scatter(x_max1, y_max1, color='red', label=f'Ponto Máximo Tabela 1: ({x_max1} nm)') #plota o ponto máximo que será comparado
 
 # Plotar o segundo arquivo normalizado
-plt.plot(df2.iloc[:, 0], df2.iloc[:, 1], label='Extinção da Síntese II', c = 'orange')
-x_max2, y_max2 = encontrar_ponto_maximo(df2)
-plt.scatter(x_max2, y_max2, color='red', label=f'Ponto Máximo da Síntese II: ({x_max2} nm)') #define o ponto máximo que será comparado
+plt.plot(df2.iloc[:, 0], df2.iloc[:, 1], label='Extinção da Síntese II', c = 'orange') #plota para o arquivo a primeira coluna como eixo X (comprimento de onda) e a segunda como eixo Y (absorbância)
+x_max2, y_max2 = encontrar_ponto_maximo(df2) #define qual é o ponto máximo do pico chamando a função no arquivo
+plt.scatter(x_max2, y_max2, color='red', label=f'Ponto Máximo da Síntese II: ({x_max2} nm)') #plota o ponto máximo que será comparado
 ```
 Por fim use plt.plot nos pontos encontrados para conectar os pontos.
 ```python
