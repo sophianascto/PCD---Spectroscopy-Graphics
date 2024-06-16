@@ -8,3 +8,5 @@ Primeiro faça isso
 # Este é um exemplo de código Python que faz X, Y, Z
 def exemplo():
     print("Olá, mundo!")
+```
+depois faça isso
